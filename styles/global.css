@@ -26,3 +26,11 @@ img {
   max-width: 100%;
   display: block;
 }
+
+pre {
+  background-color: #EEEEEE;
+  margin-bottom: 10px;
+  overflow: auto;
+  padding: 5px;
+  width: auto;
+}

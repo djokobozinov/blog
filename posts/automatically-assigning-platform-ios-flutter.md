@@ -10,16 +10,16 @@ If you had this error when trying to build Flutter app on iPhone 12 Pro Max this
 
 - In your terminal in flutter_project run 
 ```
-flutter clean
+$ flutter clean
 ``` 
 - In your terminal in flutter_project/ios run the commands 
 ```
-pod update
-pod repo update
+$ pod update
+$ pod repo update
 ``` 
 - Open iOS simulator and in terminal run
 ```
-flutter run
+$ flutter run
 ```
 
 And the problem is solved!
