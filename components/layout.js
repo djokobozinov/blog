@@ -3,9 +3,10 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Social from './social';
 
 const name = 'Gjoko Bozhinov';
-export const siteTitle = 'Gjoko\'s Blog';
+export const siteTitle = "Gjoko's Blog";
 
 export default function Layout({ children, home }) {
 	return (
@@ -26,6 +27,7 @@ export default function Layout({ children, home }) {
 				<meta name='twitter:card' content='summary_large_image' />
 			</Head>
 			<header className={styles.header}>
+				<Social></Social>
 				{home ? (
 					<>
 						<Image

@@ -1,0 +1,10 @@
+.socialHolder {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.socialImg {
+	cursor: pointer;
+	padding: 2px !important;
+}
