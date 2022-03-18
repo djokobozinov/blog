@@ -23,17 +23,7 @@ export default function Social() {
 					width={40}
 					alt='Facebook'
 				/>
-			</a>
-			<a href='https://www.facebook.com/djoko.bozinov/' target='_blank'>
-				<Image
-					className={styles.socialImg}
-					priority
-					src='/images/social/facebook.png'
-					height={40}
-					width={40}
-					alt='Facebook'
-				/>
-			</a>
+			</a>	
 		</div>
 	);
 }
