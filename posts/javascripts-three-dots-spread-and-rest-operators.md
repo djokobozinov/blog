@@ -22,8 +22,10 @@ console.log(fruits);
 console.log(moreFruits);
 ``` 
 When you run the code you will get this output:
->[ 'apple', 'banana', 'kiwi' ]<br>
->[ 'apple', 'banana', 'kiwi', 'strawberry', 'lemon' ]
+```
+[ 'apple', 'banana', 'kiwi' ]
+[ 'apple', 'banana', 'kiwi', 'strawberry', 'lemon' ]
+```
 
 **You can use to clone array: **
 
@@ -107,8 +109,10 @@ function printArguments(a, b, ...c) {
 printArguments(1, 2, 3, 4, 5, 6, 7);
 ``` 
 You will get this output:
->a: 1<br>
->b: 2<br>
->c: [ 3, 4, 5, 6, 7 ]
+```
+a: 1
+b: 2
+c: [ 3, 4, 5, 6, 7 ]
+```
 
 Thanks!

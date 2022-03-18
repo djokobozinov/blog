@@ -34,10 +34,11 @@ console.timeEnd('Measuring forEach');
 ``` 
 
 After we run this code we will see this output:
-
-> Measuring for: 3.511ms <br>
-> Measuring forOf: 23.368ms <br>
-> Measuring forEach: 15.921ms 
+```
+ Measuring for: 3.511ms 
+ Measuring forOf: 23.368ms 
+ Measuring forEach: 15.921ms 
+```
 
 **Classic way where you define start and end time**
 
