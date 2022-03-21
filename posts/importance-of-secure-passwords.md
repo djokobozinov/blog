@@ -1,5 +1,5 @@
 ---
-title: 'Importance of long, strong and secure passwords. Unlocking zip password with Node.js (basic example).'
+title: 'Importance of long, strong and secure passwords.'
 date: '2021-04-20'
 ---
 
