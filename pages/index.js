@@ -7,10 +7,6 @@ import BlogItem from '../components/blog_item';
 export default function Home({ allPostsData }) {
 	return (
 		<Layout home>
-			<Head>
-				<title>{siteTitle}</title>
-			</Head>
-
 			<section className={utilStyles.headingMd}>
 				<p className={utilStyles.headingMd}>
 					I value clean code and simplicity, and love working with latest
