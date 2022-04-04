@@ -1,6 +1,7 @@
 ---
 title: 'Automatically assigning platform `iOS` with version `10.0` on target `Runner` because no platform was specified - Flutter'
 date: '2021-09-18'
+description: 'If you had this error when trying to build Flutter app on iPhone 12 Pro Max this is the solution that worked for me'
 ---
 
 If you had this error when trying to build Flutter app on iPhone 12 Pro Max this is the solution that worked for me:

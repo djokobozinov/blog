@@ -12,7 +12,7 @@ export default function Home({ allPostsData }) {
 			</Head>
 
 			<section className={utilStyles.headingMd}>
-				<p>
+				<p className={utilStyles.headingMd}>
 					I value clean code and simplicity, and love working with latest
 					technologies.
 				</p>
@@ -20,8 +20,13 @@ export default function Home({ allPostsData }) {
 
 			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
 				<ul className={utilStyles.list}>
-					{allPostsData.map(({ id, date, title }) => (
-						<BlogItem id={id} date={date} title={title} />
+					{allPostsData.map(({ id, date, title, description }) => (
+						<BlogItem
+							id={id}
+							date={date}
+							title={title}
+							description={description}
+						/>
 					))}
 				</ul>
 			</section>

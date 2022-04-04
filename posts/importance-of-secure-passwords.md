@@ -1,6 +1,7 @@
 ---
 title: 'Importance of long, strong and secure passwords.'
 date: '2021-04-20'
+description: 'In this article I will explain you why long, strong and secure passwords are very important.' 
 ---
 
 In this article I will explain you why **long, strong and secure passwords are very important**. I will show you basic example in Node.js, how zip file, with very weak password can be unlocked, using brute force. 

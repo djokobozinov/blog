@@ -1,6 +1,7 @@
 ---
 title: 'console.time() in JavaScript'
 date: '2021-04-08'
+description: 'If you want to measure execution time of pieces of your code, one of the ways to do it, is using `console.time()`.'
 ---
 
 If you want to measure execution time of pieces of your code, one of the ways to do it, is using `console.time()`. 

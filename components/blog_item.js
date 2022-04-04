@@ -3,18 +3,17 @@ import Date from '../components/date';
 import utilStyles from '../styles/utils.module.css';
 import styles from './blog_item.module.css';
 
-export default function BlogItem({ id, date, title }) {
+export default function BlogItem({ id, date, title, description }) {
 	return (
-		<div className={styles.card}>
+		<div className={styles.card} key={id}>
 			<small className={utilStyles.lightText}>
 				<Date dateString={date} />
 			</small>
 			<br />
-			<li className={utilStyles.listItem} key={id}>
-				<Link href={`/${id}`}>
-					<a>{title}</a>
-				</Link>
-			</li>
+			<Link href={`/${id}`}>
+				<a>{title}</a>
+			</Link>
+			<div className={styles.description}>{description}</div>
 		</div>
 	);
 }

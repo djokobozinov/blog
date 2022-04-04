@@ -1,6 +1,7 @@
 ---
 title: "JavaScript's three dots (...). Spread and Rest Operators."
 date: "2021-04-19"
+description: 'In this short article I will explain what Spread and Rest operators are, and how they can be used in JavaScript.'
 ---
 
 In this short article I will explain what Spread and Rest operators are, and how they can be used in JavaScript.
