@@ -6,20 +6,20 @@ import Link from 'next/link';
 import Social from './social';
 
 const name = 'Gjoko Bozhinov';
-const siteTitle = "Gjoko's Blog";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, title, description }) {
 	return (
 		<div className={styles.container}>
 			<Head>
 				<link rel='icon' href='/favicon.ico' />
-				<title>{siteTitle}</title>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
-					name='description'
-					content='Blogging about Software Development.'
+					property='og:image'
+					content='https://gbozhinov.com/images/gjoko.jpg'
 				/>
-				<meta property='og:image' content='https://gbozhinov.com/images/gjoko.jpg' />
-				<meta name='og:title' content={siteTitle} />
+				<meta name='og:title' content={title} />
+				<meta property='og:description' content={description} />
 				<meta name='twitter:card' content='summary_large_image' />
 			</Head>
 			<header className={styles.header}>

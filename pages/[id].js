@@ -1,6 +1,5 @@
 import Layout from '../components/layout';
 import Date from '../components/date';
-import Head from 'next/head';
 import utilStyles from '../styles/utils.module.css';
 import { getAllPostIds, getPostData } from '../services/post_service';
 
@@ -23,10 +22,7 @@ export async function getStaticPaths() {
 
 export default function Post({ postData }) {
 	return (
-		<Layout>
-			<Head>
-				<title>{postData.title}</title>
-			</Head>
+		<Layout title={postData.title} description={postData.description}>
 			<article>
 				<h1 className={utilStyles.headingXl}>{postData.title}</h1>
 				<div className={utilStyles.lightText}>
