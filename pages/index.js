@@ -7,6 +7,8 @@ const siteTitle = "Gjoko's Blog";
 const siteDescription =
 	'Blogging about Software Development, programming, life...';
 
+const hiddenBlogPosts = ['memory_game'];
+
 export default function Home({ allPostsData }) {
 	return (
 		<Layout title={siteTitle} description={siteDescription} home>
@@ -19,14 +21,17 @@ export default function Home({ allPostsData }) {
 
 			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
 				<ul className={utilStyles.list}>
-					{allPostsData.map(({ id, date, title, description }) => (
-						<BlogItem
-							id={id}
-							date={date}
-							title={title}
-							description={description}
-						/>
-					))}
+					{allPostsData.map(
+						({ id, date, title, description }) =>
+							!hiddenBlogPosts.includes(id) && (
+								<BlogItem
+									id={id}
+									date={date}
+									title={title}
+									description={description}
+								/>
+							)
+					)}
 				</ul>
 			</section>
 		</Layout>
