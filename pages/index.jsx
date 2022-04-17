@@ -15,11 +15,17 @@ export default function Home({ allPostsData }) {
 			<section className={utilStyles.headingMd}>
 				<p className={utilStyles.headingMd}>
 					I value clean code and simplicity, and love working with latest
-					technologies.
+					technologies. <br />
+					Currently working with Flutter, React, NextJS, NodeJS. <br />
+					Feel free to <a href='mailto: djoko.bozinov@gmail.com'>
+						contact me
+					</a>{' '}
+					if you have any questions.
 				</p>
 			</section>
-
-			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+			<hr />
+			<section className={`${utilStyles.headingMd}`}>
+				<h4>Blog</h4>
 				<ul className={utilStyles.list}>
 					{allPostsData.map(
 						({ id, date, title, description }) =>
