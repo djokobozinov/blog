@@ -16,11 +16,10 @@ export default function Layout({ children, home, title, description }) {
 				<meta name='description' content={description} />
 				<meta
 					property='og:image'
-					content='https://gbozhinov.com/images/gjoko.jpg'
+					content='https://gbozhinov.com/images/code.jpg'
 				/>
 				<meta name='og:title' content={title} />
 				<meta property='og:description' content={description} />
-				<meta property="og:image" content="https://gbozhinov.com/images/code.jpg" />
 				<meta name='twitter:card' content='summary_large_image' />
 			</Head>
 			<header className={styles.header}>
