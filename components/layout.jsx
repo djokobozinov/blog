@@ -35,6 +35,7 @@ export default function Layout({ children, home, title, description }) {
 							alt={name}
 						/>
 						<h1 className={utilStyles.headingXl}>{name}</h1>
+						<p className={styles.jobTitle}>Software Developer</p>
 					</>
 				) : (
 					<>
@@ -55,6 +56,7 @@ export default function Layout({ children, home, title, description }) {
 								<a className={utilStyles.colorInherit}>{name}</a>
 							</Link>
 						</h2>
+						<p className={`${styles.jobTitle} ${styles.paddingBottom}`}>Software Developer</p>
 					</>
 				)}
 			</header>

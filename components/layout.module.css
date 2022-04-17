@@ -13,3 +13,13 @@
 .backToHome {
 	margin: 3rem 0 0;
 }
+
+.jobTitle {
+	font-size: 0.8rem;
+	font-weight: 300;
+	margin: 0 0;
+}
+
+.paddingBottom {
+	padding-bottom: 1.5rem;
+}
