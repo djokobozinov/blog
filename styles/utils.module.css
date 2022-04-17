@@ -15,6 +15,11 @@
 	line-height: 1.5;
 }
 
+.headingNormal {
+	font-size: 1.1rem;
+	line-height: 1.5;
+}
+
 .borderCircle {
 	border-radius: 9999px;
 }

@@ -13,7 +13,7 @@ export default function Home({ allPostsData }) {
 	return (
 		<Layout title={siteTitle} description={siteDescription} home>
 			<section className={utilStyles.headingMd}>
-				<p className={utilStyles.headingMd}>
+				<p className={utilStyles.headingNormal}>
 					I value clean code and simplicity, and love working with latest
 					technologies. <br />
 					Currently working with Flutter, React, Next.js, NodeJS. <br />
