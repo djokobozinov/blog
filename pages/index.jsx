@@ -25,6 +25,7 @@ export default function Home({ allPostsData }) {
 						({ id, date, title, description }) =>
 							!hiddenBlogPosts.includes(id) && (
 								<BlogItem
+									key={id}
 									id={id}
 									date={date}
 									title={title}
