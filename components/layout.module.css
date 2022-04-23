@@ -23,3 +23,8 @@
 .paddingBottom {
 	padding-bottom: 1.5rem;
 }
+
+.borderCircle {
+	border-radius: 9999px;
+	border: 2px solid #C0C0C0 !important;
+}

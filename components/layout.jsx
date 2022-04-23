@@ -29,7 +29,7 @@ export default function Layout({ children, home, title, description }) {
 						<Image
 							priority
 							src='/images/gjoko.jpg'
-							className={utilStyles.borderCircle}
+							className={styles.borderCircle}
 							height={144}
 							width={144}
 							alt={name}
@@ -44,7 +44,7 @@ export default function Layout({ children, home, title, description }) {
 								<Image
 									priority
 									src='/images/gjoko.jpg'
-									className={utilStyles.borderCircle}
+									className={styles.borderCircle}
 									height={108}
 									width={108}
 									alt={name}
@@ -56,7 +56,9 @@ export default function Layout({ children, home, title, description }) {
 								<a className={utilStyles.colorInherit}>{name}</a>
 							</Link>
 						</h2>
-						<p className={`${styles.jobTitle} ${styles.paddingBottom}`}>Software Developer</p>
+						<p className={`${styles.jobTitle} ${styles.paddingBottom}`}>
+							Software Developer
+						</p>
 					</>
 				)}
 			</header>
