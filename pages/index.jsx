@@ -16,7 +16,8 @@ export default function Home({ allPostsData }) {
 				<p className={utilStyles.headingNormal}>
 					I value clean code and simplicity, and love working with latest
 					technologies. <br />
-					Currently working with Flutter, React, Next.js, NodeJS and Java. <br />
+					Currently working with Flutter, React, Next.js, NodeJS and Java.{' '}
+					<br />
 					Feel free to <a href='mailto: djoko.bozinov@gmail.com'>
 						contact me
 					</a>{' '}
@@ -28,7 +29,7 @@ export default function Home({ allPostsData }) {
 				<h4>Blog</h4>
 				<ul className={utilStyles.list}>
 					{allPostsData.map(
-						({ id, date, title, description }) =>
+						({ id, date, title, description, tags }) =>
 							!hiddenBlogPosts.includes(id) && (
 								<BlogItem
 									key={id}
@@ -36,6 +37,7 @@ export default function Home({ allPostsData }) {
 									date={date}
 									title={title}
 									description={description}
+									tags={tags}
 								/>
 							)
 					)}

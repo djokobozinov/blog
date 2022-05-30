@@ -2,6 +2,7 @@
 title: 'GestureDetector with Container is not tappable on empty spaces'
 date: '2022-04-25'
 description: 'GestureDetector with Container is not tappable on empty spaces, on tap is working only for childs inside.'
+tags: 'Flutter'
 ---
 
 GestureDetector with Container is not tappable, on tap is working only for childs inside. 

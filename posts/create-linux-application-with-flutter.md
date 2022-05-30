@@ -2,6 +2,7 @@
 title: 'Create Linux application with Flutter'
 date: '2021-05-27'
 description: 'Hello, in this article I will explain step by step, how you can create Linux application with Flutter'
+tags: 'Flutter, Linux'
 ---
 
 Hello, in this article I will explain step by step, how you can create Linux application with  [Flutter](https://flutter.dev/) . 

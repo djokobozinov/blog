@@ -2,6 +2,7 @@
 title: 'How To Use Classes in JavaScript'
 date: '2021-03-30'
 description: 'This is an easy guide that will help you understand JavaScript classes. Probably by now you already have heard about them. Classes are blueprints for objects.'
+tags: 'JavaScript'
 ---
 
 This is an easy guide that will help you understand JavaScript classes.

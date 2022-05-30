@@ -2,6 +2,7 @@
 title: 'Errors in build.gradle in Flutter application: Cannot resolve symbol "Properties" and Cannot resolve symbol "GradleException"'
 date: '2021-11-08'
 description: 'If you are developing Flutter application using Android studio maybe you have seen this errors in build.gradle'
+tags: 'Flutter'
 ---
 
 If you are developing Flutter application using Android studio maybe you have seen this errors in build.gradle:

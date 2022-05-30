@@ -2,6 +2,7 @@
 title: "Memory Game"
 date: "2022-04-14"
 description: 'Memory Game is a small game that I developed in Flutter, and is available for playing for free on this link for Android, and you can find it here for Linux.'
+tags: 'Flutter, Game'
 ---
 
 [Memory Game](https://play.google.com/store/apps/details?id=gjoko.memorygame) is a small game that I developed in Flutter, and is available for playing for free on this [link](https://play.google.com/store/apps/details?id=gjoko.memorygame) for Android, and you can find it [here](https://snapcraft.io/memory-game) for Linux.
