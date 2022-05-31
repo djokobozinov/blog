@@ -18,10 +18,25 @@ export default function Home({ allPostsData }) {
 					technologies. <br />
 					Currently working with Flutter, React, Next.js, NodeJS and Java.{' '}
 					<br />
-					Feel free to <a href='mailto: djoko.bozinov@gmail.com'>
-						contact me
+					📧 Feel free to{' '}
+					<a href='mailto: djoko.bozinov@gmail.com'>contact me</a> if you have
+					any questions.
+					<br />
+					💻 Checkout my{' '}
+					<a
+						href='https://www.upwork.com/freelancers/~01d5fcb58c05a81260'
+						target='_blank'
+					>
+						Upwork profile
 					</a>{' '}
-					if you have any questions.
+					<br />
+					📱 Checkout my{' '}
+					<a
+						href='https://play.google.com/store/apps/dev?id=7462252183579132740'
+						target='_blank'
+					>
+						Google Play Developer page{' '}
+					</a>{' '}
 				</p>
 			</section>
 			<hr />
