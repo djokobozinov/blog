@@ -5,8 +5,14 @@ export default function Tags({ tags }) {
 		<div className={styles.holder}>
 			{tags &&
 				tags.length > 0 &&
-				tags.split(',').map((tag) => {
-					return tag && <div className={styles.tag}>{tag}</div>;
+				tags.split(',').map((tag, index) => {
+					return (
+						tag && (
+							<div key={index} className={styles.tag}>
+								{tag}
+							</div>
+						)
+					);
 				})}
 		</div>
 	);
