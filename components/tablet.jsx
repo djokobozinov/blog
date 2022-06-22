@@ -5,7 +5,7 @@ export default function Tablet() {
 	return (
 		<div className={styles.memoryGameDiv}>
 			<hr />
-			<h4>Checkout your memory</h4>
+			<h4>Memory game</h4>
 			<div className={styles.tabletDiv}>
 				<Image src='/images/tablet.png' width={900} height={600}></Image>
 				<iframe
