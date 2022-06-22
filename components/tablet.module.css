@@ -1,0 +1,22 @@
+.tabletDiv {
+	width: 600px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.webView {
+	width: 550px;
+	height: 87%;
+	position: absolute;
+	top: 20px;
+	left: 25px;
+	right: 25px;
+	bottom: 100px;
+	border-width: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.memoryGameDiv {
+		display: none;
+	}
+}

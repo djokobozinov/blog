@@ -2,6 +2,7 @@ import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../services/post_service';
 import BlogItem from '../components/blog_item';
+import Tablet from '../components/tablet';
 
 const siteTitle = "Gjoko's Blog";
 const siteDescription =
@@ -56,6 +57,9 @@ export default function Home({ allPostsData }) {
 							)
 					)}
 				</ul>
+			</section>
+			<section className={utilStyles.headingMd}>
+				<Tablet></Tablet>
 			</section>
 		</Layout>
 	);
