@@ -24,7 +24,7 @@ export default function Home({ allPostsData }) {
 					<br />
 					🥇 Top rated developer on{' '}
 					<a
-						href='https://www.upwork.com/freelancers/~01d5fcb58c05a81260'
+						href='https://www.upwork.com/freelancers/bozinov'
 						target='_blank'
 					>
 						Upwork.
