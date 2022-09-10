@@ -17,7 +17,7 @@ export default function Home({ allPostsData }) {
 				<p className={utilStyles.headingNormal}>
 					I value clean code and simplicity, and love working with latest
 					technologies. <br />
-					Currently working with Java, Node.js, React and Flutter. <br />
+					Currently working with Node.js, React, Flutter and Java. <br />
 					📧 Feel free to{' '}
 					<a href='mailto: djoko.bozinov@gmail.com'>contact me</a> if you have
 					any questions.
