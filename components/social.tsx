@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function Social() {
 	return (
-		<div className='flex justify-end w-full gap-2'>
-			<a href='https://github.com/djokobozinov' target='_blank'>
+		<div className='flex justify-end w-full gap-1'>
+			<a href='https://www.linkedin.com/in/bozinov/' target='_blank'>
 				<Image
-					className='cursor-pointer p-1'
+					className='cursor-pointer'
 					priority
 					src='/images/social/linkedin.png'
 					height={40}
@@ -15,7 +15,7 @@ export default function Social() {
 			</a>
 			<a href='https://github.com/djokobozinov' target='_blank'>
 				<Image
-					className='cursor-pointer p-1'
+					className='cursor-pointer'
 					priority
 					src='/images/social/github.png'
 					height={40}
