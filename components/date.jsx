@@ -1,10 +1,9 @@
 import { parseISO, format } from 'date-fns';
-import styles from './date.module.css';
 
 export default function Date({ dateString }) {
 	const date = parseISO(dateString);
 	return (
-		<time className={styles.time} dateTime={dateString}>
+		<time className='text-sm text-gray-500' dateTime={dateString}>
 			{format(date, 'LLLL d, yyyy')}
 		</time>
 	);

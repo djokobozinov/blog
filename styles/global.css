@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
 	padding: 0;
@@ -35,4 +39,14 @@ pre {
 	padding: 5px;
 	width: auto;
 	font-size: 0.8rem;
+}
+
+ul {
+	list-style-type: circle;
+	list-style-position: inside;
+	color: #000;
+}
+
+p {
+	margin-bottom: 6px;
 }
