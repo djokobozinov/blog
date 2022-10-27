@@ -11,9 +11,7 @@ export default function BlogItem({ id, date, title, description, tags }) {
 				<Date dateString={date} />
 			</small>
 			<br />
-			<Link href={`/${id}`}>
-				<a>{title}</a>
-			</Link>
+			<Link href={`/${id}`}>{title}</Link>
 			<div className={styles.description}>{description}</div>
 			<Tags tags={tags}></Tags>
 		</div>

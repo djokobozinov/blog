@@ -1,8 +1,10 @@
+import React from 'react';
 import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../services/post_service';
 import BlogItem from '../components/blog_item';
 import Tablet from '../components/tablet';
+import Separator from '../components/separator';
 
 const siteTitle = "Gjoko's Blog";
 const siteDescription =
@@ -14,19 +16,17 @@ export default function Home({ allPostsData }) {
 	return (
 		<Layout title={siteTitle} description={siteDescription} home>
 			<section className={utilStyles.headingMd}>
-				<p className={utilStyles.headingNormal}>
+				<p className='mt-4'>
 					I value clean code and simplicity, and love working with latest
 					technologies. <br />
-					Currently working with Node.js, React, Flutter and Java. <br />
+					Currently working with React, Next.js, Node.js, Express, Flutter and
+					Java. <br />
 					📧 Feel free to{' '}
 					<a href='mailto: djoko.bozinov@gmail.com'>contact me</a> if you have
 					any questions.
 					<br />
 					🥇 Top rated developer on{' '}
-					<a
-						href='https://www.upwork.com/freelancers/bozinov'
-						target='_blank'
-					>
+					<a href='https://www.upwork.com/freelancers/bozinov' target='_blank'>
 						Upwork.
 					</a>{' '}
 					<br />
@@ -39,7 +39,7 @@ export default function Home({ allPostsData }) {
 					</a>{' '}
 				</p>
 			</section>
-			<hr />
+			<Separator title='Blog'></Separator>
 			<section className={`${utilStyles.headingMd}`}>
 				<h4>Blog</h4>
 				<ul className={utilStyles.list}>
@@ -58,6 +58,7 @@ export default function Home({ allPostsData }) {
 					)}
 				</ul>
 			</section>
+			<Separator title='Memory game'></Separator>
 			<section className={utilStyles.headingMd}>
 				<Tablet></Tablet>
 			</section>
