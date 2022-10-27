@@ -29,7 +29,7 @@ When you run the code you will get this output:
 [ 'apple', 'banana', 'kiwi', 'strawberry', 'lemon' ]
 ```
 
-**You can use to clone array: **
+**You can use to clone array:**
 
 In JavaScript the objects are assigned by reference and not by values.
 

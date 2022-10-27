@@ -15,7 +15,7 @@ const hiddenBlogPosts = ['memory_game'];
 export default function Home({ allPostsData }) {
 	return (
 		<Layout title={siteTitle} description={siteDescription} home>
-			<section className={utilStyles.headingMd}>
+			<section>
 				<p className='mt-4'>
 					I value clean code and simplicity, and love working with latest
 					technologies. <br />
@@ -40,8 +40,7 @@ export default function Home({ allPostsData }) {
 				</p>
 			</section>
 			<Separator title='Blog'></Separator>
-			<section className={`${utilStyles.headingMd}`}>
-				<h4>Blog</h4>
+			<section>
 				<ul className={utilStyles.list}>
 					{allPostsData.map(
 						({ id, date, title, description, tags }) =>
@@ -58,8 +57,8 @@ export default function Home({ allPostsData }) {
 					)}
 				</ul>
 			</section>
-			<Separator title='Memory game'></Separator>
-			<section className={utilStyles.headingMd}>
+			<section className='hidden md:block'>
+				<Separator title='Memory game'></Separator>
 				<Tablet></Tablet>
 			</section>
 		</Layout>
