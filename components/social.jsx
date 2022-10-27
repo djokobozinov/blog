@@ -7,17 +7,17 @@ export default function Social() {
 				<Image
 					className='cursor-pointer p-1'
 					priority
-					src='/images/social/github.png'
+					src='/images/social/linkedin.png'
 					height={40}
 					width={40}
 					alt='Facebook'
 				/>
 			</a>
-			<a href='https://twitter.com/bozinovd' target='_blank'>
+			<a href='https://github.com/djokobozinov' target='_blank'>
 				<Image
 					className='cursor-pointer p-1'
 					priority
-					src='/images/social/twitter.png'
+					src='/images/social/github.png'
 					height={40}
 					width={40}
 					alt='Facebook'

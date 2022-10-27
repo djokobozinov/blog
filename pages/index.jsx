@@ -17,17 +17,17 @@ export default function Home({ allPostsData }) {
 				<p className={utilStyles.headingNormal}>
 					I value clean code and simplicity, and love working with latest
 					technologies. <br />
-					Currently working with Java, React and Flutter. <br />
+					Currently working with Node.js, React, Flutter and Java. <br />
 					📧 Feel free to{' '}
 					<a href='mailto: djoko.bozinov@gmail.com'>contact me</a> if you have
 					any questions.
 					<br />
-					💻 Checkout my{' '}
+					🥇 Top rated developer on{' '}
 					<a
-						href='https://www.upwork.com/freelancers/~01d5fcb58c05a81260'
+						href='https://www.upwork.com/freelancers/bozinov'
 						target='_blank'
 					>
-						Upwork profile
+						Upwork.
 					</a>{' '}
 					<br />
 					📱 Checkout my{' '}
@@ -35,7 +35,7 @@ export default function Home({ allPostsData }) {
 						href='https://play.google.com/store/apps/dev?id=7462252183579132740'
 						target='_blank'
 					>
-						Google Play Developer page{' '}
+						Google Play Developer page.
 					</a>{' '}
 				</p>
 			</section>
