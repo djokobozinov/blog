@@ -4,6 +4,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Social from './social';
+import Separator from './separator';
 
 const name = 'Gjoko Bozhinov';
 
@@ -23,7 +24,6 @@ export default function Layout({ children, home, title, description }) {
 				<meta name='twitter:card' content='summary_large_image' />
 			</Head>
 			<header className={styles.header}>
-				<Social></Social>
 				{home ? (
 					<>
 						<Image
@@ -64,6 +64,10 @@ export default function Layout({ children, home, title, description }) {
 					<Link href='/'>← Back to home</Link>
 				</div>
 			)}
+			<div className='mt-14'>
+				<Separator></Separator>
+				<Social></Social>
+			</div>
 		</div>
 	);
 }
