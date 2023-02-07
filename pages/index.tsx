@@ -5,6 +5,7 @@ import { getSortedPostsData } from '../services/post_service';
 import BlogItem from '../components/blog_item';
 import Tablet from '../components/tablet';
 import Separator from '../components/separator';
+import VideoIntroduction from '../components/video_introductionn';
 
 const siteTitle = "Gjoko's Blog";
 const siteDescription =
@@ -39,6 +40,8 @@ export default function Home({ allPostsData }) {
 					</a>{' '}
 				</p>
 			</section>
+			<Separator title='Video introduction'></Separator>
+			<VideoIntroduction></VideoIntroduction>
 			<Separator title='Blog'></Separator>
 			<section>
 				<ul className={utilStyles.list}>
