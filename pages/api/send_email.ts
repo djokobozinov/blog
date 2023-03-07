@@ -6,12 +6,12 @@ export default function handler(req, res) {
 	const transporter: Transporter = createTransport({
 		service: 'gmail',
 		auth: {
-			user: process.env.EMAIL,
-			pass: process.env.PASSWORD,
+			user: process.env.NEXT_PUBLIC_EMAIL,
+			pass: process.env.NEXT_PUBLIC_PASSWORD,
 		},
 	});
 	const mailOptions = {
-		from: process.env.EMAIL,
+		from: process.env.NEXT_PUBLIC_EMAIL,
 		to: 'djoko.bozinov@gmail.com',
 		subject: subject,
 		text: text,
