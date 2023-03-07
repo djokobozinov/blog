@@ -1,9 +1,8 @@
 import { createTransport, Transporter } from 'nodemailer';
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
 	const { subject, text } = req.query as { subject: string; text: string };
-	console.log('to email', process.env.NEXT_PUBLIC_EMAIL);
-	const transporter: Transporter = createTransport({
+	const transporter: Transporter = await createTransport({
 		service: 'gmail',
 		auth: {
 			user: process.env.NEXT_PUBLIC_EMAIL,
@@ -16,7 +15,7 @@ export default function handler(req, res) {
 		subject: subject,
 		text: text,
 	};
-	transporter.sendMail(mailOptions, function (error, info) {
+	await transporter.sendMail(mailOptions, function (error, info) {
 		if (error) {
 			console.log(error);
 		} else {
