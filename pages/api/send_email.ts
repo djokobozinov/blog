@@ -1,7 +1,8 @@
 import { createTransport, Transporter } from 'nodemailer';
 
 export default function handler(req, res) {
-	const { subject, text } = req.body as { subject: string; text: string };
+	const { subject, text } = req.query as { subject: string; text: string };
+	console.log('subject', subject);
 	const transporter: Transporter = createTransport({
 		service: 'gmail',
 		auth: {
