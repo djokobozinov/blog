@@ -2,7 +2,7 @@ import { createTransport, Transporter } from 'nodemailer';
 
 export default function handler(req, res) {
 	const { subject, text } = req.query as { subject: string; text: string };
-	console.log('subject', subject);
+	console.log('to email', process.env.NEXT_PUBLIC_EMAIL);
 	const transporter: Transporter = createTransport({
 		service: 'gmail',
 		auth: {
