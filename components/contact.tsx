@@ -8,6 +8,9 @@ export default function Contact() {
 	const [enabled, setEnabled] = useState(false);
 
 	const onSend = () => {
+		if (!enabled) {
+			return;
+		}
 		sendEmail({ subject: `GBozhinov.com | Email from: ${email}`, text });
 		setEmail('');
 		setText('');
