@@ -7,6 +7,7 @@ import Tablet from '../components/tablet';
 import Separator from '../components/separator';
 import VideoIntroduction from '../components/video_introductionn';
 import AboutMe from '../components/about_me';
+import Contact from '../components/contact';
 
 const siteTitle = "Gjoko's Blog";
 const siteDescription =
@@ -52,7 +53,7 @@ export default function Home({ allPostsData }) {
 				{displayPosts.length < allVisiblePosts.length && (
 					<div className='flex w-full justify-center'>
 						<div
-							className='flex items-center justify-center h-10 w-28 border border-gray-700 cursor-pointer rounded-lg text-sm'
+							className='flex items-center justify-center h-10 w-28 border border-gray-700 cursor-pointer rounded-lg text-sm hover:bg-gray-100'
 							onClick={onViewMore}
 						>
 							View More
@@ -60,8 +61,9 @@ export default function Home({ allPostsData }) {
 					</div>
 				)}
 			</section>
+			<Contact></Contact>
 			<section className='hidden md:block'>
-				<Separator title='Have some fun'></Separator>
+				<Separator title='Have some fun 🙂'></Separator>
 				<Tablet></Tablet>
 			</section>
 		</Layout>
