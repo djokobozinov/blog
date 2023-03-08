@@ -1,16 +1,14 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Social from './social';
 import Separator from './separator';
+import Header from './header';
 
 const name = 'Gjoko Bozhinov';
 
 export default function Layout({ children, home, title, description }) {
 	return (
-		<div className={styles.container}>
+		<div className='max-w-xl m-auto mt-5 mb-10'>
 			<Head>
 				<link rel='icon' href='/favicon.ico' />
 				<title>{title}</title>
@@ -23,41 +21,7 @@ export default function Layout({ children, home, title, description }) {
 				<meta property='og:description' content={description} />
 				<meta name='twitter:card' content='summary_large_image' />
 			</Head>
-			<header className={styles.header}>
-				{home ? (
-					<>
-						<Image
-							priority
-							src='/images/gjoko.jpg'
-							className={styles.borderCircle}
-							height={144}
-							width={144}
-							alt={name}
-						/>
-						<h1 className={utilStyles.headingXl}>{name}</h1>
-						<p className={styles.jobTitle}>Software Developer</p>
-					</>
-				) : (
-					<>
-						<Link href='/'>
-							<Image
-								priority
-								src='/images/gjoko.jpg'
-								className={styles.borderCircle}
-								height={108}
-								width={108}
-								alt={name}
-							/>
-						</Link>
-						<h2 className={utilStyles.headingLg}>
-							<Link href='/'>{name}</Link>
-						</h2>
-						<p className={`${styles.jobTitle} ${styles.paddingBottom}`}>
-							Software Developer
-						</p>
-					</>
-				)}
-			</header>
+			<Header home={home} name={name}></Header>
 			<main>{children}</main>
 			{!home && (
 				<div className={styles.backToHome}>

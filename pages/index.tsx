@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
 import Layout from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../services/post_service';
 import BlogItem from '../components/blog_item';
 import Tablet from '../components/tablet';
 import Separator from '../components/separator';
-import VideoIntroduction from '../components/video_introductionn';
+import VideoIntroduction from '../components/video_introduction';
 import AboutMe from '../components/about_me';
 import Contact from '../components/contact';
 
@@ -38,7 +37,7 @@ export default function Home({ allPostsData }) {
 			<VideoIntroduction></VideoIntroduction>
 			<Separator title='Blog'></Separator>
 			<section>
-				<ul className={utilStyles.list}>
+				<ul>
 					{displayPosts.map(({ id, date, title, description, tags }) => (
 						<BlogItem
 							key={id}
@@ -53,7 +52,7 @@ export default function Home({ allPostsData }) {
 				{displayPosts.length < allVisiblePosts.length && (
 					<div className='flex w-full justify-center'>
 						<div
-							className='flex items-center justify-center h-10 w-28 border border-gray-700 cursor-pointer rounded-lg text-sm hover:bg-gray-100'
+							className='flex items-center justify-center h-10 w-28 border border-cyan-900 text-cyan-900 cursor-pointer rounded-lg text-sm hover:bg-cyan-900 hover:text-white'
 							onClick={onViewMore}
 						>
 							View More

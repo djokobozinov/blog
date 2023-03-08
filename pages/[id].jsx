@@ -1,6 +1,5 @@
 import Layout from '../components/layout';
 import Date from '../components/date';
-import utilStyles from '../styles/utils.module.css';
 import { getAllPostIds, getPostData } from '../services/post_service';
 
 export async function getStaticProps({ params }) {
@@ -24,7 +23,7 @@ export default function Post({ postData }) {
 	return (
 		<Layout title={postData.title} description={postData.description}>
 			<article>
-				<h1 className={utilStyles.headingXl}>{postData.title}</h1>
+				<h1 className='text-2xl'>{postData.title}</h1>
 				<div className='text-gray-500 mb-2'>
 					<Date dateString={postData.date} />
 				</div>

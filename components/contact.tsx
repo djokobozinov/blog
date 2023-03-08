@@ -25,12 +25,12 @@ export default function Contact() {
 	}, [email, text]);
 	return (
 		<div className='flex flex-col gap-2 border rounded-xl p-4 mt-10 bg-gray-100'>
-			<div className='font-semibold'>Contact</div>
+			<div className='font-semibold text-cyan-900'>Contact</div>
 			<div className='text-xs text-gray-600'>
 				If you need a website or mobile application for your business or idea,
 				or if you have some questions feel free to contact me.
 			</div>
-			<div className='text-sm mt-3 text-gray-600'>Your email</div>
+			<div className='text-sm mt-3 text-cyan-900'>Your email</div>
 			<input
 				type='email'
 				className='rounded border h-10 w-full border-gray-300 focus-visible:border-gray-400 focus-visible:outline-0 px-2 text-sm'
@@ -40,7 +40,7 @@ export default function Contact() {
 				}}
 				value={email}
 			></input>
-			<div className='text-sm text-gray-600'>Message</div>
+			<div className='text-sm text-cyan-900'>Message</div>
 			<textarea
 				className={`w-full h-24 resize-none p-3 border-gray-300 focus-visible:border-gray-400 focus-visible:outline-0 text-sm scrollbar-hide rounded border`}
 				placeholder='I have a small restaurant and I need a website...'
@@ -51,8 +51,8 @@ export default function Contact() {
 			></textarea>
 			<div className='flex w-full justify-center'>
 				<div
-					className={`flex items-center justify-center h-10 w-28 border bg-gray-500 rounded-lg text-sm text-white  ${
-						enabled ? 'cursor-pointer hover:bg-gray-600' : 'opacity-50'
+					className={`flex items-center justify-center h-10 w-28 border bg-cyan-900 rounded-lg text-sm text-white  ${
+						enabled ? 'cursor-pointer hover:bg-cyan-700' : 'opacity-50'
 					} `}
 					onClick={onSend}
 				>
