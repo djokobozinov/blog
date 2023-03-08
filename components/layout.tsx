@@ -8,7 +8,7 @@ const name = 'Gjoko Bozhinov';
 
 export default function Layout({ children, home, title, description }) {
 	return (
-		<div className='max-w-xl m-auto mt-5 mb-10'>
+		<div className='max-w-xl m-auto mt-5 mb-10 p-4'>
 			<Head>
 				<link rel='icon' href='/favicon.ico' />
 				<title>{title}</title>
