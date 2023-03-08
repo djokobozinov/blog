@@ -24,8 +24,10 @@ export default function Layout({ children, home, title, description }) {
 			<Header home={home} name={name}></Header>
 			<main>{children}</main>
 			{!home && (
-				<div className={styles.backToHome}>
-					<Link href='/'>← Back to home</Link>
+				<div className='mt-5'>
+					<Link className='text-cyan-900' href='/'>
+						← Back to home
+					</Link>
 				</div>
 			)}
 			<div className='mt-14'>

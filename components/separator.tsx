@@ -1,5 +1,5 @@
 type Props = {
-	title: string;
+	title?: string;
 };
 export default function Separator({ title }: Props) {
 	return (
