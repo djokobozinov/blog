@@ -23,7 +23,7 @@ export default function Post({ postData }) {
 	return (
 		<Layout title={postData.title} description={postData.description}>
 			<article>
-				<h1 className='text-2xl'>{postData.title}</h1>
+				<h1 className='text-2xl text-cyan-900'>{postData.title}</h1>
 				<div className='text-gray-500 mb-2'>
 					<Date dateString={postData.date} />
 				</div>

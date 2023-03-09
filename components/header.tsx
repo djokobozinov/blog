@@ -5,7 +5,7 @@ type Props = {
 	home?: boolean;
 	name: string;
 };
-export default function Header({ home = true, name }: Props) {
+export default function Header({ home = false, name }: Props) {
 	return (
 		<header className='flex flex-col items-center justify-center'>
 			{home ? (
@@ -38,7 +38,7 @@ export default function Header({ home = true, name }: Props) {
 							{name}
 						</Link>
 					</h2>
-					<p className='text-xs'>Software Developer</p>
+					<p className='text-xs mb-8'>Software Developer</p>
 				</>
 			)}
 		</header>
