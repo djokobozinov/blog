@@ -8,9 +8,9 @@ import VideoIntroduction from '../components/video_introduction';
 import AboutMe from '../components/about_me';
 import Contact from '../components/contact';
 
-const siteTitle = "Gjoko's Blog";
+const siteTitle = 'Gjoko Bozhinov';
 const siteDescription =
-	'Blogging about Software Development, programming, life...';
+	'Need a website or mobile app? I can help! As an experienced developer, I create customized solutions that meet your needs. Contact me today to get started!';
 
 const hiddenBlogPosts = ['memory_game'];
 
@@ -33,6 +33,7 @@ export default function Home({ allPostsData }) {
 	return (
 		<Layout title={siteTitle} description={siteDescription} home>
 			<AboutMe></AboutMe>
+			<Contact></Contact>
 			<Separator title='Video introduction'></Separator>
 			<VideoIntroduction></VideoIntroduction>
 			<Separator title='Blog'></Separator>
@@ -59,11 +60,6 @@ export default function Home({ allPostsData }) {
 						</div>
 					</div>
 				)}
-			</section>
-			<Contact></Contact>
-			<section className='hidden md:block'>
-				<Separator title='Have some fun 🙂'></Separator>
-				<Tablet></Tablet>
 			</section>
 		</Layout>
 	);

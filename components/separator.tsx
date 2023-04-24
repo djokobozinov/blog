@@ -3,7 +3,7 @@ type Props = {
 };
 export default function Separator({ title }: Props) {
 	return (
-		<div className='mb-2 mt-8'>
+		<div className='mb-2 mt-8 font-mono'>
 			<div className='h-[1px] bg-gray-300 mt-4 mb-2'></div>
 			<div className='font-semibold text-cyan-900'>{title}</div>
 		</div>

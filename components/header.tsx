@@ -7,7 +7,7 @@ type Props = {
 };
 export default function Header({ home = false, name }: Props) {
 	return (
-		<header className='flex flex-col items-center justify-center'>
+		<header className='flex flex-col items-center justify-center font-mono'>
 			{home ? (
 				<>
 					<Image

@@ -1,35 +1,14 @@
 export default function AboutMe() {
 	return (
-		<section>
-			<p className='mt-4'>
-				I value clean code and simplicity, and love working with latest
-				technologies. <br />
-				Currently working with React, Next.js, React Native, Node.js, Express,
-				Flutter and Java. <br />
-				📧 Feel free to{' '}
-				<a className='text-cyan-900' href='mailto: djoko.bozinov@gmail.com'>
-					contact me
-				</a>{' '}
-				if you have any questions.
-				<br />
-				🥇 Top rated developer on{' '}
-				<a
-					className='text-cyan-900'
-					href='https://www.upwork.com/freelancers/bozinov'
-					target='_blank'
-				>
-					Upwork.
-				</a>{' '}
-				<br />
-				📱 Checkout my{' '}
-				<a
-					className='text-cyan-900'
-					href='https://play.google.com/store/apps/dev?id=7462252183579132740'
-					target='_blank'
-				>
-					Google Play Developer page.
-				</a>{' '}
-			</p>
-		</section>
+		<h2 className='mt-4 text-base text-gray-900'>
+			Looking for an affordable solution for your website or mobile application
+			needs?
+			<br />
+			As an experienced developer, I specialize in creating customized solutions
+			that won't break the bank. Whether you're a small business or an
+			individual with an idea, I'm here to help. <br />
+			Contact me today to learn more about how I can bring your digital vision
+			to life without costing a fortune.
+		</h2>
 	);
 }

@@ -24,13 +24,14 @@ export default function Contact() {
 		}
 	}, [email, text]);
 	return (
-		<div className='flex flex-col gap-2 border rounded-xl p-4 mt-10 bg-gray-100'>
-			<div className='font-semibold text-cyan-900'>Contact</div>
+		<div className='flex flex-col gap-2 border rounded-xl p-4 mt-7 bg-gray-100'>
+			<div className='text-cyan-900 font-mono'>Contact</div>
 			<div className='text-xs text-gray-600'>
-				If you need a website or mobile application for your business or idea,
-				or if you have some questions feel free to contact me.
+				Need a website or mobile app? I can help! As an experienced developer, I
+				create customized solutions that meet your needs. Contact me today to
+				get started!
 			</div>
-			<div className='text-sm mt-3 text-cyan-900'>Your email</div>
+			<div className='text-sm mt-3 text-cyan-900 font-mono'>Your email</div>
 			<input
 				type='email'
 				className='rounded border h-10 w-full border-gray-300 focus-visible:border-gray-400 focus-visible:outline-0 px-2 text-sm'
@@ -40,9 +41,9 @@ export default function Contact() {
 				}}
 				value={email}
 			></input>
-			<div className='text-sm text-cyan-900'>Message</div>
+			<div className='text-sm text-cyan-900 font-mono mt-2'>Message</div>
 			<textarea
-				className={`w-full h-24 resize-none p-3 border-gray-300 focus-visible:border-gray-400 focus-visible:outline-0 text-sm scrollbar-hide rounded border`}
+				className={`w-full h-36 resize-none p-3 border-gray-300 focus-visible:border-gray-400 focus-visible:outline-0 text-sm scrollbar-hide rounded border`}
 				placeholder='I have a small restaurant and I need a website...'
 				onChange={(e) => {
 					setText(e.target.value);
