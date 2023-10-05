@@ -47,6 +47,11 @@ ul {
 	color: #000;
 }
 
+ul li code {
+	font-size: 0.8rem;
+	background-color: #eeeeee;
+}
+
 p {
 	margin-bottom: 6px;
 }
