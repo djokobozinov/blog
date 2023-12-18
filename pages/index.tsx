@@ -2,11 +2,10 @@ import { useEffect, useState } from 'react';
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../services/post_service';
 import BlogItem from '../components/blog_item';
-import Tablet from '../components/tablet';
 import Separator from '../components/separator';
-import VideoIntroduction from '../components/video_introduction';
 import AboutMe from '../components/about_me';
 import Contact from '../components/contact';
+import YouTubeVideo from '../components/youtube_video';
 
 const siteTitle = 'Gjoko Bozhinov';
 const siteDescription =
@@ -35,7 +34,7 @@ export default function Home({ allPostsData }) {
 			<AboutMe></AboutMe>
 			<Contact></Contact>
 			<Separator title='Video introduction'></Separator>
-			<VideoIntroduction></VideoIntroduction>
+			<YouTubeVideo videoId={'t5M6Qq3QE8I'} />
 			<Separator title='Blog'></Separator>
 			<section>
 				<ul>

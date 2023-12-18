@@ -24,7 +24,7 @@ export default function Contact() {
 		}
 	}, [email, text]);
 	return (
-		<div className='flex flex-col gap-2 border rounded-xl p-4 mt-7 bg-gray-100'>
+		<div className='flex flex-col gap-2 border rounded-xl p-4 mt-7'>
 			<div className='text-cyan-900'>Contact</div>
 			<div className='text-xs text-gray-600'>
 				Need a website or mobile app? I can help! As an experienced developer, I
