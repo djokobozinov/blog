@@ -18,9 +18,7 @@ export default function Home({ allPostsData }) {
 	const [displayPosts, setDisplayPosts] = useState([]);
 
 	useEffect(() => {
-		const filteredPosts = allPostsData.filter(
-			(post) => !hiddenBlogPosts.includes(post.id)
-		);
+		const filteredPosts = allPostsData.filter((post) => !hiddenBlogPosts.includes(post.id));
 		setAllVisiblePosts(filteredPosts);
 		setDisplayPosts(filteredPosts.slice(0, 3));
 	}, []);
@@ -31,22 +29,15 @@ export default function Home({ allPostsData }) {
 
 	return (
 		<Layout title={siteTitle} description={siteDescription} home>
-			<AboutMe></AboutMe>
-			<Contact></Contact>
+			<AboutMe />
+			<Contact />
 			<Separator title='Video introduction'></Separator>
 			<YouTubeVideo videoId={'t5M6Qq3QE8I'} />
 			<Separator title='Blog'></Separator>
 			<section>
 				<ul>
 					{displayPosts.map(({ id, date, title, description, tags }) => (
-						<BlogItem
-							key={id}
-							id={id}
-							date={date}
-							title={title}
-							description={description}
-							tags={tags}
-						/>
+						<BlogItem key={id} id={id} date={date} title={title} description={description} tags={tags} />
 					))}
 				</ul>
 				{displayPosts.length < allVisiblePosts.length && (
