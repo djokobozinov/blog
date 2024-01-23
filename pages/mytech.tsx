@@ -19,6 +19,11 @@ export default function Page() {
 					url={'https://tailwindcss.com/'}
 				/>
 				<LibItem
+					title={'Classnames'}
+					description={'A simple JavaScript utility for conditionally joining classNames together.'}
+					url={'https://www.npmjs.com/package/classnames'}
+				/>
+				<LibItem
 					title={'Lucid'}
 					description={
 						'Lucide is an open-source icon library that provides 1000+ vector (svg) files for displaying icons and symbols in digital and non-digital projects.'
