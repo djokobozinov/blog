@@ -19,15 +19,26 @@ export default function Invoice() {
 			bankAccount: 'BE37 9674 7859 4528',
 			swift: 'TRWIBEB1XXX',
 		},
+		{
+			name: 'Gorenska',
+			bankAccount: 'SI56 0765 1721 3785 053',
+			swift: 'GORESI2X',
+		},
 	];
 
 	const customers = [
-		{ billedToName: 'Select Customer', billedToAddress: '', billedToCity: '', billedToCountry: '' },
+		{ name: 'Select Customer', address: '', city: '', country: '' },
 		{
-			billedToName: 'Otherdex Inc.',
-			billedToAddress: '1810 SE 2nd st.',
-			billedToCity: 'Deerfield Beach, Florida 33441',
-			billedToCountry: 'United States',
+			name: 'Otherdex Inc.',
+			address: '1810 SE 2nd st.',
+			city: 'Deerfield Beach, Florida 33441',
+			country: 'United States',
+		},
+		{
+			name: 'ZuluNest',
+			address: '140 N. Victory Blvd #104',
+			city: 'Burbank, California 91502',
+			country: 'United States',
 		},
 	];
 
@@ -76,15 +87,15 @@ export default function Invoice() {
 					name='Customers'
 					onChange={(e) => {
 						const selectedCustomer = e.target.value;
-						const customer = customers.find((c) => c.billedToName === selectedCustomer);
-						setBilledToName(customer.billedToName);
-						setBilledToAddress(customer.billedToAddress);
-						setBilledToCity(customer.billedToCity);
-						setBilledToCountry(customer.billedToCountry);
+						const customer = customers.find((c) => c.name === selectedCustomer);
+						setBilledToName(customer.name);
+						setBilledToAddress(customer.address);
+						setBilledToCity(customer.city);
+						setBilledToCountry(customer.country);
 					}}
 				>
 					{customers.map((c) => {
-						return <option value={c.billedToName}>{c.billedToName}</option>;
+						return <option value={c.name}>{c.name}</option>;
 					})}
 				</select>
 				<select
@@ -152,11 +163,17 @@ export default function Invoice() {
 						<p>Software Development</p>
 						<p>{amount}€</p>
 					</div>
+					<div className='flex flex-col gap-1 items-end w-full'>
+						<span>SUBTOTAL: {amount}€</span>
+						<span>{'VAT RATE (0%)'}</span>
+						<span>{'VAT 0,0'}</span>
+					</div>
 				</div>
 				<div className='flex mt-10 px-5 justify-between'>
 					<div className='flex flex-col'>
 						<p>Invoice Total</p>
 						<p className='font-semibold text-2xl'>{amount}€</p>
+						<p className='text-[10px] text-gray-500'>*VAT exempt under article 287 of VAT Directive </p>
 					</div>
 					<div className='flex flex-col'>
 						<p> INVOICE ISSUED BY</p>
