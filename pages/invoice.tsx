@@ -52,7 +52,7 @@ export default function Invoice() {
 	}
 
 	return (
-		<div className='flex flex-col w-full justify-center items-center my-10 gap-5'>
+		<div className='flex flex-col w-full justify-center items-center my-10 gap-3'>
 			<div className='flex w-full px-10 gap-2 justify-center'>
 				<input
 					placeholder='Number'
@@ -124,7 +124,7 @@ export default function Invoice() {
 			<div className='w-full border h-[1px]'></div>
 			<div id='invoicePaper' className='flex flex-col w-[800px] gap-1 border p-10 text-sm'>
 				<div className='flex w-full justify-between items-center'>
-					<h1 className='text-3xl font-bold'>Invoice</h1>
+					<h1 className='text-2xl font-bold'>Invoice</h1>
 					<img src={'/images/logo.png'} className='w-[70px] rounded-full'></img>
 				</div>
 				<div className='flex w-full mt-5'>
@@ -133,8 +133,8 @@ export default function Invoice() {
 				<div className='flex w-full'>
 					<p className='text-gray-600 uppercase'>Date of issue: {date}</p>
 				</div>
-				<div className='flex flex-col w-full items-end mt-10'>
-					<p className='text-base font-semibold'>Računalniško programiranje Gjoko Bozhinov, s.p.</p>
+				<div className='flex flex-col w-full items-end mt-5'>
+					<p className='text-sm font-semibold'>Računalniško programiranje Gjoko Bozhinov, s.p.</p>
 					<p className='text-gray-600'> Čeplje 70D, 3305 Vransko, Slovenia</p>
 					<p className='text-gray-600'>VAT reg. no.: 84143991</p>
 				</div>
@@ -163,7 +163,7 @@ export default function Invoice() {
 						<p>Software Development</p>
 						<p>{amount}€</p>
 					</div>
-					<div className='flex flex-col gap-1 items-end w-full'>
+					<div className='flex flex-col items-end w-full text-xs'>
 						<span>SUBTOTAL: {amount}€</span>
 						<span>{'VAT RATE (0%)'}</span>
 						<span>{'VAT 0,0'}</span>
